@@ -15,20 +15,22 @@ defined('_JEXEC') or die();
  */
 class plgSystemJitalycookiechoices extends JPlugin
 {
-	public $_app;
 	
-	public function __construct(&$subject, $config) {
-		$this->_app = JFactory::getApplication();
-        $this->_doc = JFactory::getDocument();
-        $config = JFactory::getConfig();
-        parent::__construct($subject, $config);
-	}
 	/**
 	* Load the language file on instantiation. Note this is only available in Joomla 3.1 and higher.
 	* @var    boolean
 	* @since  3.1
 	*/
 	protected $autoloadLanguage = true;
+	
+	public $app;
+	
+	public function __construct(&$subject, $config) {
+		$this->app = JFactory::getApplication();
+        $this->_doc = JFactory::getDocument();
+        $config = JFactory::getConfig();
+        parent::__construct($subject, $config);
+	}
 	
 	private function _setMessage() {
         $msg = '<div class="plg_system_jitalycookiechoices_message">';
