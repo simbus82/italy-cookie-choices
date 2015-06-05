@@ -1,29 +1,42 @@
 <?php
-// no direct access
-defined( '_JEXEC' ) or die;
+/**
+ * @package    Joomla
+ * @subpackage Plugins
+ * @license    GNU/GPL
+ */
  
-class plg<PluginGroup><PluginName> extends JPlugin
+// Check to ensure this file is included in Joomla!
+defined('_JEXEC') or die();
+ 
+/**
+ * @package    Joomla
+ * @subpackage Plugins
+ * @license    GNU/GPL
+ */
+class plgSystemJitalycookiechoices extends JPlugin
 {
 	/**
-	 * Load the language file on instantiation. Note this is only available in Joomla 3.1 and higher.
-	 * If you want to support 3.0 series you must override the constructor
-	 *
-	 * @var    boolean
-	 * @since  3.1
-	 */
+	* Load the language file on instantiation. Note this is only available in Joomla 3.1 and higher.
+	* @var    boolean
+	* @since  3.1
+	*/
 	protected $autoloadLanguage = true;
- 
+	
 	/**
-	 * Plugin method with the same name as the event will be called automatically.
-	 */
-	 function <EventName>()
-	 {
+	* This method should handle something
+	*
+	* @access    public
+	* @param     array     $dati    Array holding something
+	* @param     array     $options        Array of extra options
+	* @param     object    $response       Response object
+	* @return    boolean
+	* @since 1.5
+	*/
+	function onPageLoad()
+	{
 		/*
-		 * Plugin code goes here.
-		 * You can access database and application objects and parameters via $this->db,
-		 * $this->app and $this->params respectively
-		 */
-		return true;
+		* Here you would do whatever you need
+		*/
 	}
 }
 ?>
