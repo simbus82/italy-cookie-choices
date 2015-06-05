@@ -9,35 +9,35 @@
 	<creationDate>2015-06-05</creationDate>
 	<version>0.0.1</version>
 	<description>PLG_SYSTEM_JITALYCOOKIECHOICE_XML_DESCRIPTION</description>
-
-  <files>
+	
+	<files>
 		<filename plugin="jitalycookiechoices">jitalycookiechoices.php</filename>
 		<filename>index.html</filename>
-    <folder>sql</folder>
-    <folder>language</folder>
-    <folder>js</folder>
+		<folder>sql</folder>
+		<folder>language</folder>
+		<folder>js</folder>
 	</files>
-
-  <languages>
-		<language tag="en-GB">en-GB.plg_system_jitalycookiechoices.ini</language>
-		<language tag="en-GB">en-GB.plg_system_jitalycookiechoices.sys.ini</language>
+	
+	<languages>
+		<language tag="it-IT">it-IT.plg_system_jitalycookiechoices.ini</language>
+		<language tag="it-IT">it-IT.plg_system_jitalycookiechoices.sys.ini</language>
 	</languages>
 	
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
 				<field name="search_limit" type="text"
-					default="50"
-					description="JFIELD_PLG_SYSTEM_JITALYCOOKIECHOICE_DESC"
-					label="JFIELD_PLG_SYSTEM_JITALYCOOKIECHOICE_LABEL"
-					size="5"
+				default="50"
+				description="JFIELD_PLG_SYSTEM_JITALYCOOKIECHOICE_DESC"
+				label="JFIELD_PLG_SYSTEM_JITALYCOOKIECHOICE_LABEL"
+				size="5"
 				/>
 			</fieldset>
-      <fieldset name="advanced">
+			<fieldset name="advanced">
 				<field name="search_content" type="radio"
-					default="0"
-					description="JFIELD_PLG_SYSTEM_ALL_DESC"
-					label="JFIELD_PLG_SYSTEM_ALL_LABEL"
+				default="0"
+				description="JFIELD_PLG_SYSTEM_ALL_DESC"
+				label="JFIELD_PLG_SYSTEM_ALL_LABEL"
 				>
 					<option value="0">JOFF</option>
 					<option value="1">JON</option>
@@ -45,7 +45,7 @@
 			</fieldset>
 		</fields>
 	</config>
-  <updateservers>
-      <server type="extension" priority="1" name="PLG_SYSTEM_JITALYCOOKIECHOICE"><![CDATA[http://www.mysite.com/updates/jitalycookiechoices_update.xml]]></server>
-  </updateservers>
+	<updateservers>
+		<server type="extension" priority="1" name="PLG_SYSTEM_JITALYCOOKIECHOICE"><![CDATA[http://www.mysite.com/updates/jitalycookiechoices_update.xml]]></server>
+	</updateservers>
 </extension>
