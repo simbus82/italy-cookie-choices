@@ -1,7 +1,8 @@
-# Italy Cookie Choices #
+# Italy Cookie Choices - Joomla Plugin Attempt #
+
 **Contributors:** overclokk, Andrea Pernici  
 Donate link: 
-**Tags:** compliance, cookie law, cookies, eu cookie law, eu law, eu privacy directive, privacy, privacy directive, notification, privacy law, cookie law banner, implied consent, third party script, third party cookie  
+**Tags:** compliance, cookie law, cookies, eu cookie law, eu law, eu privacy directive, privacy, privacy directive, notification, privacy law, cookie law banner, implied consent, third party script, third party cookie, joomla eu privacy, joomla cookie, joomla eu cookie, joomla eu privacy directive  
 **Requires at least:** 4.1  
 **Tested up to:** 4.3.0  
 **Stable tag:** 2.0.0  
@@ -30,12 +31,12 @@ Add `ga('set', 'anonymizeIp', true);` in your analytics snippet [AnonymizeIP](ht
 ### Developer ###
 (Enea Overclokk)[http://www.overclokk.net/]
 (Andrea Pernici)[https://www.andreapernici.com/]
+For Joomla 3.x attempt: Simone Bussoni [http://www.simbus82.net/]
 
 ## Installation ##
 
 1. Upload `italy-cookie-choices` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Configure the plugin throught Settings -> Italy Cookie Choices
+2. Activate and configure the plugin through the 'Plugins' menu in Joomla
 
 ## Frequently Asked Questions ##
 
@@ -47,14 +48,6 @@ will not be shown again.
 ### Why am I not seeing the message? ###
 
 Probably, you already have visited the site before, so you accepted the use of cookies and the plugin installed a cookie in your browser to know it. If you want to test if the plugin is working properly, try removing the cookies `displayCookieConsent` from your web browser or navigating in incognito mode. If you think that the plugin is not working properly, just open an issue here https://github.com/overclokk/italy-cookie-choices/issues and I will check it for you.
-
-### Does it work in static HTML pages? ###
-
-Yes, simply copy the snippet generate by "Italy Cookie Choses for WordPress" and put in your HTML footer before </body> tag
-
-### I use Async JS and CSS plugin, but the banner doesn't display ###
-
-You have to uncheck the `Detect <script> tags in wp_footer` in Async JS and CSS plugin settings page and refresh page.
 
 ## Screenshots ##
 
@@ -77,104 +70,12 @@ You have to uncheck the `Detect <script> tags in wp_footer` in Async JS and CSS 
 ![Italy Cookie Choices Content area](http://s.wordpress.org/extend/plugins/italy-cookie-choices/screenshot-6.png)
 
 
-## Changelog ##
+## Changelog Joomla 3.x Attempt ##
 
-### 2.0.0 ###
+### 0.0.1 ###
 **Release Date:** June 5th, 2015  
 
-**Dev time:** 60h  
-
-* Merged Third part cookie eraser and Italy Cookie Choices
-* Added new input for banner background color and text color
-* Added input for text and button in embed block content and widget
-* Added shortcode button for policy page [accept_button]
-
-### 1.2.3 ###
-**Release Date:** May 31th, 2015  
-
-**Dev time:** 3h  
-
-* Added slug input for your cookie policy page to display only topbar
-* Added option for target _blank
-
-### 1.2.2 ###
-**Release Date:** May 29th, 2015  
-
-**Dev time:** 1h  
-
-* [Fixed cookie setting path to root](https://github.com/overclokk/italy-cookie-choices/issues/20)
-
-### 1.2.1 ###
-**Release Date:** May 28th, 2015  
-
-**Dev time:** 2h  
-
-* [Added checkbox for refresh page after button click](https://wordpress.org/support/topic/aggiunta-del-refresh-dopo-lok?replies=3)
-* [Fixed cookie name issue](https://github.com/overclokk/italy-cookie-choices/issues/21)
-
-
-### 1.2.0 ###
-**Release Date:** May 27th, 2015  
-
-**Dev time:** 20h  
-
-* [Fixed duble alert box in admin when options are saved](https://github.com/overclokk/italy-cookie-choices/issues/13)
-* [Add options for mouse scroll event](https://github.com/overclokk/italy-cookie-choices/issues/19)
-* [Added options for add margin at top of the page if topbar is used](https://github.com/overclokk/italy-cookie-choices/issues/6)
-* Added advanced options for set Cookie name and Cookie value for an eventual migration to this plugin
-
-### 1.1.3 ###
-**Release Date:** May 26th, 2015  
-
-**Dev time:** 5h  
-
-* Fixed admin UX https://github.com/overclokk/italy-cookie-choices/issues/14
-* Fixed Typo in lang
-* Changed WP compatibility to 4.1
-* Added noscript in case browser has JavaScript disabled https://github.com/overclokk/italy-cookie-choices/issues/8
-* Fixed click event https://github.com/overclokk/italy-cookie-choices/issues/15
-
-### 1.1.2 ###
-**Release Date:** May 22st, 2015  
-
-**Dev time:** 10min  
-
-* Fix z-index issue
-
-### 1.1.1 ###
-**Release Date:** May 22st, 2015  
-
-**Dev time:** 1h  
-
-* Add scroll event
-
-### 1.1.0 ###
-**Release Date:** May 22st, 2015  
-
-**Dev time:** 10h  
-
-* Fix special char visualization
-* Add italian translations
-* Removed default text
-
-### 1.0.0 ###
-**Release Date:** May 21st, 2015  
-
-**Dev time:** 50h  
-
-* First release.
-
-## Upgrade Notice ##
-
-### 1.0.0 ###
-First release.
-
-## Translations ##
- 
-* English: default, always included.
-* Italian: Italiano, sempre incluso.
-
-*Note:* This plugins is localized/ translateable by default. This is very important for all users worldwide. So please contribute your language to the plugin to make it even more useful. For translating I recommend the awesome ["Codestyling Localization" plugin](http://wordpress.org/extend/plugins/codestyling-localization/) and for validating the ["Poedit Editor"](http://www.poedit.net/).
+* Forked from Wordpress plugin https://github.com/ItalyCookieChoices/italy-cookie-choices
  
 ## Additional Info ##
 
